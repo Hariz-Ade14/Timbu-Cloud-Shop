@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.colm{
+    border-radius: 12px;
+    padding: 8px;
+    margin-top: 30px;
+    /* height: 30px; */
+}
+.about{
+    height: 40px;
+    padding-top: 5px;
+}
+.price{
+    line-height: 6px;
+    font-size: 13px;
+    margin-top: 2px;
+
+}
+.cart{
+    color: white;
+    padding: 8px 5px 5px 6px;
+    margin: 0px 0px 10px 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    background-color: #A70201;
+    ;
+
+}
+.cart:hover{
+    background-color: #a701019c;
+    
+}

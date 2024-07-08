@@ -1,0 +1,59 @@
+.firstbtns{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+}
+.secondbtns{
+    display: none;
+}
+.aycc{
+    font-size: 15px;
+}
+.inp::placeholder{
+   color: gray;
+}
+.checkform{
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 10px;
+}
+.checkpay{
+    border: 1px solid rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 10px;
+    /* position: absolute;
+    top: 100px;
+    right: 10px; */
+
+}
+@media screen and (max-width: 576px) {
+    .firstbtns{
+         display: none;
+    }
+    .secondbtns{
+        display: block;
+    }
+    .checkform{
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    /* .checkpay{
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+    } */
+    .tbl{
+       border: 1px solid rgb(219, 219, 219);
+       margin: 0px 14px;
+       border-radius: 10px;
+       padding-left: 20px;
+
+    }
+    .coupon{
+        margin: 0px 14px;
+    }
+}
