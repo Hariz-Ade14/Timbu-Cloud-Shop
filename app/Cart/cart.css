@@ -1,33 +1,20 @@
-th{
-    border: 4px solid black;
-    /* background-color: blanchedalmond; */
-    width: 100%;
-    border-collapse: collapse;
-  }
-tr{
-    /* margin: 10px 20px; */
-    /* background-color: rgb(255, 188, 188); */
-}
 
-.img{
-    width: 100px;
-    height: 100px;
-}
 .table{
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
-    /* background-color: brown; */
+    
+} 
+.reduce{
+    background-color: #a701018e;
+    color: white;
+    outline: none;
 }
-td{
-    border: 1px solid black;
-    border-collapse: collapse;
 
-}
 .mail{
     border: 1px solid rgb(196, 196, 196);
-    width: 100%;
+    /* width: 100%; */
 }
 .ayc{
     font-size: 13px;
@@ -43,6 +30,20 @@ td{
     align-items: start;
     justify-content: end;
  }
+ .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .quantity1{
+    display: none;
+ }
+ .price2{
+    display: none;
+ }
+ .coupon{
+    border: 1px solid rgb(202, 202, 202);
+ }
 @media screen and (max-width:576px) {
        .firstrow{
           display: flex;
@@ -55,5 +56,38 @@ td{
         display: flex;
         align-items: start;
         justify-content: space-between;
+     }
+     .thead{
+        display: none;
+     }
+     .subTotal{
+        display: none;
+     }
+     .quantity{
+        display: none;
+     }
+     .quantity1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .times{
+        display: none;
+     }
+     .price1{
+        display: none;
+     }
+     .price2{
+        display: block;
+        /* margin-top: 30px; */
+        /* background-color: red; */
+        height: 110px;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: space-between;
+     }
+     .coupon{
+        border: none;
      }
 }

@@ -4,6 +4,17 @@ import "./checkout.css";
 import Link from "next/link";
 
 const Checkout = () => {
+	const SubTotal = [];
+
+	let val;
+
+	let sum = 0;
+	for (let i = 0; i < SubTotal.length; i++) {
+		sum += Number(SubTotal[i]);
+		val = sum;
+		console.log(typeof SubTotal[i]);
+	}
+	console.log(sum);
 	return (
 		<div>
 			<h1 className='mt-24 text-center'>Checkout</h1>
@@ -70,8 +81,10 @@ const Checkout = () => {
 							</div>
 
 							<div className='firstbtns my-5 px-5'>
-								<button  type='submit' class='btn btn-outline-danger w-50'>
-									<Link href="/Cart" className="text-danger no-underline">Back to Cart</Link>
+								<button type='submit' class='btn btn-outline-danger w-50'>
+									<Link href='/Cart' className='text-danger no-underline'>
+										Back to Cart
+									</Link>
 								</button>
 								<button type='button' class='btn btn-danger w-50'>
 									Next
@@ -79,53 +92,38 @@ const Checkout = () => {
 							</div>
 						</form>
 					</div>
-					<div className='col-sm-3 col-12 checkpay'>
-						<div></div>
-						<div className='tbl'>
-							<table className='tb'>
-								<br />
-								<tr>
-									<td>SubTotal</td>
-								</tr>
-								<br />
-								<tr>
-									<td>Promo Code</td>
-								</tr>
-								<br />
-								<tr>
-									<td>Shipping Fee</td>
-								</tr>
-								<br />
-								<tr>
-									<td>Grand Total</td>
-								</tr>
-							</table>
-						</div>
-
-						<div className='mt-5 coupon'>
-							<h5>Have a coupon?</h5>
-							<p className='aycc'>Add your code for instant discount.</p>
-							<div className='row px-3'>
-								<input
-									type='text'
-									className='inp col-7 border rounded text-dark'
-									placeholder='Input'
-								/>
-								<button className='btn btn-danger mr-sm-0 mx-1 col-4'>
-									Apply
-								</button>
-							</div>
-
-							<div className='secondbtns my-5 px-5'>
-								<button type='submit' class='btn btn-outline-danger w-50'>
-									Back to Cart
-								</button>
-								<button type='submit' class='btn btn-danger w-50'>
-									<Link href="/Cart" className="text-danger no-underline">Back to Cart</Link>
-									 
-								</button>
-							</div>
-						</div>
+				
+					<div className='col-sm-3 mt-sm-0 mt-2 col-10 border p-2'>
+						<table className='tb'>
+							<tr>
+								<th>Order Summary</th>
+							</tr>
+							<hr className='w-100'></hr>
+							<br />
+							<tr>
+								<td>
+									SubTotal: $
+									{SubTotal.length != 0 ? Number(val).toFixed(2) : "0"}
+								</td>
+							</tr>
+							<br />
+							<tr>
+								<td>Promo Code: ${Number(-14).toFixed(2)}</td>
+							</tr>
+							<br />
+							<tr>
+								<td>Shipping Fee: ${Number(10).toFixed(2)}</td>
+							</tr>
+							<br />
+							<tr>
+								<td>
+									Grand Total: $
+									{SubTotal.length != 0
+										? Number(val - 14.0 + 10.0).toFixed(2)
+										: "0"}
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>

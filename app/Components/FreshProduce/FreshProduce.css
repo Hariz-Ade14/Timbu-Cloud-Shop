@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.row{
+.fresh{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,4 +49,13 @@ h1{
 .cart:hover{
     background-color: #a701019c;
     
+}
+
+@media screen and (max-width: 576px) {
+    .fresh{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
 }
