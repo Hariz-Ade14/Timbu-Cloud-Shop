@@ -199,7 +199,7 @@ const Cart = () => {
 								Continue Shopping
 							</button>
 							<button className='col-sm-3 col-5 btn btn-danger'>
-								<Link className="text-white no-underline" href='/CheckOut'>Checkout</Link>
+								<Link className="text-white no-underline" href='/Checkout'>Checkout</Link>
 							</button>
 						</div>
 					</div>
