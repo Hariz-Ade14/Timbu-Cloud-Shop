@@ -71,7 +71,7 @@ const Checkout = () => {
 
 							<div className='firstbtns my-5 px-5'>
 								<button  type='submit' class='btn btn-outline-danger w-50'>
-									<Link href="/Cart" className="text-white">Back to Cart</Link>
+									<Link href="/Cart" className="text-danger no-underline">Back to Cart</Link>
 								</button>
 								<button type='button' class='btn btn-danger w-50'>
 									Next
@@ -121,7 +121,7 @@ const Checkout = () => {
 									Back to Cart
 								</button>
 								<button type='submit' class='btn btn-danger w-50'>
-									<Link href="/Cart" className="text-white">Back to Cart</Link>
+									<Link href="/Cart" className="text-danger no-underline">Back to Cart</Link>
 									 
 								</button>
 							</div>
