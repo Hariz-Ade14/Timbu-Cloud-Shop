@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
 import {FaArrowRight} from "react-icons/fa"
 const Footer = () => {
-	return (
+	return(
 		<div className='footer container-fluid sm:p-24 mt-5 py-5'>
 			<div className='row'>
 				<div className='col-sm-3 col-3'>
