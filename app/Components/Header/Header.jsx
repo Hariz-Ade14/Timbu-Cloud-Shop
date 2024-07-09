@@ -27,7 +27,7 @@ export const Header = () => {
 		<>
 			<CartProvider>
 				<div className='header flex align-middle justify-between px-sm-5 p-2 py-3'>
-					<div className='brandName flex'>
+					<div className='brandName flex align-middle'>
 						<CiApple size={40} />
 						<p className="">grocer</p>
 					</div>
