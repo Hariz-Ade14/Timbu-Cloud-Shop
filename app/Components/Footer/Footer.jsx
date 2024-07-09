@@ -91,16 +91,16 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='news col-sm-3 p-sm-0 p-3 col-12 bg-warning'>
+				<div className='news col-sm-3 p-sm-0 p-3 col-12'>
 					<ul className='list-style-none'>
 						<p className='mb-3 text-white mx-sm-3 mx-3'>Newsletter</p>
 						<li className='nav-link text-white'>
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
 						<form>
-							<div class="input-group mb-3 bg-primary mx-0">
+							<div className="input-group mb-3 mx-0">
 							  <input type="text" className="Email" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-							  <div class="input-group-append">
+							  <div className="input-group-append">
 							    <button className="btn prepend mt-0 px-2" type="button"><FaArrowRight/></button>
 							  </div>
 							</div>	
