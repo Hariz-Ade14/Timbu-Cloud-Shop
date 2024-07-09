@@ -98,12 +98,12 @@ const Footer = () => {
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
 						<form>
-							  <div class="input-group-prepend">
-							    <button class="btn btn-outline-secondary" type="button">Button</button>
-							    </div>
-							      <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-							    </div>
-							 </div>	
+							<div class="input-group mb-3">
+								  <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+								  <div class="input-group-append">
+								    <button class="btn btn-outline-secondary" type="button"><FaArrowRight/></button>
+								  </div>
+							</div>
 						</form>
 						<li className='nav-link text-white'>
 							Your email is safe with us. We do not spam.
