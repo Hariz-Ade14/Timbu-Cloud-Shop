@@ -192,7 +192,7 @@ const Checkout2 = () => {
 						<div className='container btns mt-5'>
 							<div className='row flex justify-between'>
 								<button className='col-sm-3 mx-sm-2 mx-0 col-6 btn btn-outline-danger'>
-									<Link className="text-danger no-underline" href="/Checkout">Previous</Link>
+									<Link className="no-underline" href="/Checkout">Previous</Link>
 								</button>
 								<button className='col-sm-3 col-5 btn btn-danger'>
 									<Link className="text-white no-underline" href=''>Place order</Link>
