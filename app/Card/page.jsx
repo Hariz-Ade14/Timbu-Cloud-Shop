@@ -79,7 +79,7 @@ const Checkout2 = () => {
 
 							<div className='firstbtns my-5 px-5'>
 								<button type='submit' class='btn btn-outline-danger w-50'>
-									<Link href='/Cart' className='text-danger no-underline'>
+									<Link href='/Cart' className='no-underline'>
 										Back to Cart
 									</Link>
 								</button>
