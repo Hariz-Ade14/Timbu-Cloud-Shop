@@ -97,11 +97,11 @@ const Footer = () => {
 						<li className='nav-link text-white'>
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
-						<form>
+						<form className='mt-3 pl-2'>
 							<div class="input-group mb-3">
-								  <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+								  <input type="text" class="form-control mail" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 								  <div class="input-group-append">
-								    <button class="btn btn-outline-secondary" type="button"><FaArrowRight/></button>
+								    <button class="btn btn-outline-secondary text-white" type="button"><FaArrowRight className="text-white"/></button>
 								  </div>
 							</div>
 						</form>
