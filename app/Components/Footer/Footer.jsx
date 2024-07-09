@@ -91,7 +91,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='news col-sm-3 p-sm-0 p-3 col-12'>
+				<div className='news col-sm-3 p-sm-0 p-3 col-12 bg-dark'>
 					<ul className='list-style-none'>
 						<p className='mb-3 text-white mx-sm-3 mx-3'>Newsletter</p>
 						<li className='nav-link text-white'>
