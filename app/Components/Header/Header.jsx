@@ -59,7 +59,7 @@ export const Header = () => {
 						<ul className=''>
 							<li>Home</li>
 							<li>
-								<Link href='/Pages/Home'>Products</Link>
+								<Link href='/Home'>Products</Link>
 							</li>
 							<li>About Us</li>
 							<li>Contact Us</li>
