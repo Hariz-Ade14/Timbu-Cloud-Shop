@@ -100,7 +100,9 @@ const Checkout = () => {
 									</Link>
 								</button>
 								<button type='button' class='btn btn-danger w-50'>
-									Next
+									<Link href='/Card' className='text-danger no-underline'>
+										Next
+									</Link>
 								</button>
 							</div>
 						</form>
