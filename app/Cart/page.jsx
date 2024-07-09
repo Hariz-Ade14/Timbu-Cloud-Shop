@@ -20,7 +20,7 @@ const Cart = () => {
 		emptyCart,
 	} = useCart();
 
-	if (isEmpty) return <h1 className="mt-28 text-center" style={{height: "400px"}}>Your cart is empty</h1>;
+	// if (isEmpty) return <h1 className="mt-28 text-center" style={{height: "400px"}}>Your cart is empty</h1>;
 
 	const SubTotal = [];
 
