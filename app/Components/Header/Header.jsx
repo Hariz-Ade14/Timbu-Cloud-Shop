@@ -28,27 +28,27 @@ export const Header = () => {
 			<CartProvider>
 				<div className='header flex align-middle justify-between px-sm-5 p-2 py-3'>
 					<div className='brandName flex'>
-						<CiApple size={25} />
-						<p>grocer</p>
+						<CiApple size={40} />
+						<p className="">grocer</p>
 					</div>
 					<div className='menuList'>
 						<ul className=''>
 							<li>Home</li>
 							<li>
-								<Link href='/'>Products</Link>
+								<Link className="text-white no-underline" href='/'>Products</Link>
 							</li>
 							<li>About Us</li>
 							<li>Contact Us</li>
 						</ul>
 					</div>
 					<div className='others flex align-middle justify-between'>
-						<AiOutlineHeart size={20} className='heart mx-2' />
-						<Link href='/Cart'>
-							<AiOutlineShoppingCart size={20} className='Cart mx-2' />
+						<AiOutlineHeart size={30} className='heart mx-2' />
+						<Link className="text-white no-underline" href='/Cart'>
+							<AiOutlineShoppingCart size={30} className='Cart text-white mx-2' />
 						</Link>
 
-						<AiOutlineSearch size={20} className='Search mx-2' />
-						<AiOutlineUser size={20} className='User mx-2' />
+						<AiOutlineSearch size={30} className='Search mx-2' />
+						<AiOutlineUser size={30} className='User mx-2' />
 						<AiOutlineMenu onClick={Menu} size={30} className='bars mx-2' />
 					</div>
 

@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Others = () => {
 	return (
 		<div className='container my-24'>
-			<div className='row d-flex align-items-center justify-content-between'>
+			<div className='row d-flex align-items-start justify-content-between'>
 				<div className='col-3 p-2'>
 					<div>
 						<AiOutlineCar

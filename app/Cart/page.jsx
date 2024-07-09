@@ -3,11 +3,11 @@ import React from "react";
 import "./cart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
-import img1 from "../assets/img1.png";
 import {useCart} from "react-use-cart";
 import Link from "next/link";
-import {FaTrash, FaTimes} from "react-icons/fa";
-import {CartProvider} from "react-use-cart";
+import {FaTimes} from "react-icons/fa";
+import { Header } from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer.jsx"
 const Cart = () => {
 	const {
 		isEmpty,
@@ -20,14 +20,15 @@ const Cart = () => {
 		emptyCart,
 	} = useCart();
 
-	// if (isEmpty) return <p>Your cart is empty</p>;
+	if (isEmpty) return <h1 className="mt-28 text-center" style={{height: "400px"}}>Your cart is empty</h1>;
 
 	const SubTotal = [];
 
 	let val;
 
 	return (
-		<CartProvider>
+		<>
+			<Header/>
 			<div className='mt-28'>
 				<h1 className='text-center fs-4'>Cart</h1>
 				<p className='text-center mb-5'>
@@ -66,8 +67,8 @@ const Cart = () => {
 														onClick={() => removeItem(item.id)}
 													/>
 													<Image
-														className='rounded'
-														style={{width: "100px", height: "100px"}}
+														className='prodImg rounded'
+														
 														src={item.image}
 														width={"300px"}
 													/>
@@ -81,7 +82,7 @@ const Cart = () => {
 															className='quantity1 px-3'
 														>
 															<button
-																className='btn reduce'
+																className='bt reduce'
 																onClick={() =>
 																	updateItemQuantity(item.id, item.quantity - 1)
 																}
@@ -103,7 +104,7 @@ const Cart = () => {
 											</td>
 											<td style={{height: "100px"}} className='mt-4 quantity'>
 												<button
-													className='btn reduce'
+													className='reduce'
 													onClick={() =>
 														updateItemQuantity(item.id, item.quantity - 1)
 													}
@@ -141,30 +142,30 @@ const Cart = () => {
 					</table>
 				</div>
 
-				<div className='container-sm mt-4 container-fluid'>
+				<div className='container mt-4 p-0'>
 					<div className='row firstrow'>
-						<div className='col-sm-3 col-10 coupon p-2 mx-3'>
+						<div className='col-sm-3 col-11 coupon mx-sm-2'>
 							<h6>Have a coupon?</h6>
 							<p className='ayc'>Add your code for instant discount.</p>
-							<div className='container-fluid'>
-								<div className='inputs row flex justify-between'>
+							<div className='container'>
+								<div className='row flex justify-between'>
 									<input
 										type='text'
 										className='mail col-7 mt-2 border-slate-300 bg-none py-1 px-3 rounded'
 										placeholder='Input'
 									/>
-									<button className='btn btn-danger mt-2 mr-2 col-4'>
+									<button className='btn btn-danger mt-2 mr-1 col-4'>
 										Apply
 									</button>
 								</div>
 							</div>
 						</div>
-						<div className='col-sm-3 mt-sm-0 mt-2 col-10 border p-2'>
+						<div className='col-sm-3 mt-sm-0 mt-2 col-10 border p-3'>
 							<table className='tb'>
-								<tr>
+								<tr className="summary">
 									<th>Order Summary</th>
 								</tr>
-								<hr className='w-100'></hr>
+								{/* <hr className='w-100'></hr> */}
 								<br />
 								<tr>
 									<td>
@@ -192,19 +193,20 @@ const Cart = () => {
 							</table>
 						</div>
 					</div>
-					<div className='container btns mt-5'>
-						<div className='row flex justify-between'>
+					<div className='container-fluid btns mt-5'>
+						<div className='row mx-auto flex justify-between w-sm-100'>
 							<button className='col-sm-3 mx-sm-2 mx-0 col-6 btn btn-outline-danger'>
 								Continue Shopping
 							</button>
 							<button className='col-sm-3 col-5 btn btn-danger'>
-								<Link href='/Checkout'>Checkout</Link>
+								<Link className="text-white no-underline" href='/CheckOut'>Checkout</Link>
 							</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		</CartProvider>
+			<Footer/>
+		</>
 	);
 };
 

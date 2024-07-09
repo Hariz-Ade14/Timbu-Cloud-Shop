@@ -92,15 +92,15 @@ const Footer = () => {
 				</div>
 				<div className='news col-sm-3 p-sm-0 p-3 col-12'>
 					<ul className='list-style-none'>
-						<p className='mb-3 text-white mx-sm-0 mx-3'>Newsletter</p>
+						<p className='mb-3 text-white mx-sm-3 mx-3'>Newsletter</p>
 						<li className='nav-link text-white'>
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
 						<form>
 							<input
-								type='email'
-								className='my-3'
-								placeholder='Enter your email'
+								type='text'
+								className='my-3 Email text-white ml-sm-4 w-100'
+								placeholder="Enter your email"
 							/>
 						</form>
 						<li className='nav-link text-white'>

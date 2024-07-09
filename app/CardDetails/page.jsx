@@ -1,16 +1,14 @@
 "use client";
 import React from "react";
-import "./checkout.css";
+import "../CheckOut/checkout.css";
 import Link from "next/link";
 import {useCart} from "react-use-cart";
-import {FaTimes} from "react-icons/fa";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Cart/cart.css";
-import "./checkout.css"
-import { Header } from "../Components/Header/Header";
+import Header from "../Components/Header/Header.jsx"
 
-const Checkout = () => {
+const Checkout2 = () => {
 	const {items, removeItem} = useCart();
 	const SubTotal = [];
 
@@ -27,69 +25,55 @@ const Checkout = () => {
 		<>
 		<Header/>
 		<div>
-			<h1 className='mt-24 text-center '>Checkout</h1>
+			<h1 className='mt-24 text-center'>Checkout</h1>
 			<div className='container'>
-				<div className='row flex align-stretch justify-around'>
-					
+				<div className='row flex align-middle justify-around'>
 					<div className='col-sm-8 col-12 rounded-sm  p-3'>
-						
 						<form className='checkform'>
-							<p>Personal Details</p>
+                            <p>Card Infromation</p>
 							<div class='form-row'>
 								<div class='form-group'>
-									<label>Full Name</label>
+									<label>Card type</label>
 									<input
 										type='text'
 										class='form-control'
 										id='inputEmail4'
-										placeholder='Full Name'
+										placeholder='Card type'
 									/>
 								</div>
 								<div class='form-group mt-3'>
-									<label>Email</label>
+									<label>Name on card</label>
 									<input
 										type='text'
 										class='form-control'
 										id='inputEmail4'
-										placeholder='Email'
+										placeholder='Name'
 									/>
 								</div>
 							</div>
 							<div class='form-group mt-3'>
-								<label for='inputAddress'>Address</label>
+								<label for='inputAddress'>Card number</label>
 								<input
-									type='text'
+									type='number'
 									class='form-control'
 									id='inputAddress'
-									placeholder=''
+									placeholder='123-456-78910'
 								/>
 							</div>
 
-							<div class='form-row row mt-3'>
-								<div class='form-group col-6'>
-									<label for='inputCity'>State</label>
-									<select id='inputState' class='form-control'>
-										<option>Lagos</option>
-										<option>Oyo</option>
-									</select>
-								</div>
-								<div class='form-group col-6'>
-									<label for='inputState'>Province</label>
-									<input type='text' class='form-control' id='inputCity' />
-								</div>
-							</div>
 
 							<div class='form-row row mt-3'>
 								<div class='form-group col-6'>
-									<label for='inputCity'>Zip</label>
-									<select id='inputState' class='form-control'>
-										<option>----</option>
-										<option>----</option>
-									</select>
+									<label for='inputCity'>Expiration</label>
+									<input
+									type="date"
+									class='form-control'
+									placeholder=''
+								/>
 								</div>
 								<div class='form-group col-6'>
-									<label for='inputState'>Phone Number</label>
-									<input type='text' class='form-control' id='inputCity' />
+									<label for='inputState'>CVV</label>
+									<input type='number' class='form-control' placeholder='CVV' />
 								</div>
 							</div>
 
@@ -106,10 +90,9 @@ const Checkout = () => {
 						</form>
 					</div>
 
-					<div className='col-sm-3 mt-sm-0 m-0 col-10 p-0 coup'>
-						<div className='tb'>
-							<table>
-							<h4>Order Summary</h4>
+					<div className='col-sm-3 mt-sm-0 mt-2 col-10 border'>
+						<table className='tb'>
+							<h3>Order Summary</h3>
 							{items.map((item, index) => {
 								SubTotal.push(Number(item.quantity * item.price).toFixed(2));
 								console.log(SubTotal);
@@ -124,14 +107,14 @@ const Checkout = () => {
 
 								return (
 									<>
-										<tr key={index} className='my-3 eachprod'>
-											<td className=''>
-												<div className='flex my-3 p-0'>
+										<tr key={index} className='m-2'>
+											<td className='m-2'>
+												<div className='flex my-3'>
 													<Image
-														className='rounded my-0 prodImg'
-														
+														className='rounded'
+														style={{width: "100px", height: "100px"}}
 														src={item.image}
-													
+														width={"300px"}
 													/>
 													<div>
 														<p className='flex align-middle sm:mt-10 mt-8 fw-bold ml-3'>
@@ -149,18 +132,15 @@ const Checkout = () => {
 												${Number(item.quantity * item.price).toFixed(2)}
 											</td>
 										</tr>
-										
 									</>
 								);
 							})}
-							</table>
-						</div>
-						
+						</table>
+					</div>
 
-						<div className='mt-4 container'>
-						
-							
-							<div className='mx-2 mt-3'>
+					<div className='container-sm mt-4 container-fluid'>
+						<div className='row firstrow'>
+							<div className='col-sm-3 col-10 coupon p-2 mx-3'>
 								<h6>Have a coupon?</h6>
 								<p className='ayc'>Add your code for instant discount.</p>
 								<div className='container-fluid'>
@@ -176,46 +156,51 @@ const Checkout = () => {
 									</div>
 								</div>
 							</div>
-						<div className='mt-sm-0 mt-2 p-2'>
-								<table className='checktab w-100'>
-									<tr>
-										<td className="flex justify-between">
-											<p>SubTotal </p>
-											<p>${SubTotal.length != 0 ? Number(val).toFixed(2) : "0"}</p>
-										</td>
+							<div className='col-sm-3 mt-sm-0 mt-2 col-10 border p-2'>
+								<table className='tb'>
+									<tr className="summary">
+										<th>Order Summary</th>
 									</tr>
-									<tr>
-										<td><p>Promo Code</p><p>${Number(-14).toFixed(2)}</p></td>
-									</tr>
-									<tr>
-										<td><p>Shipping Fee</p> <p>${Number(10).toFixed(2)}</p> </td>
-									</tr>
+									{/* <hr className='w-100'></hr> */}
+									<br />
 									<tr>
 										<td>
-											<p>Grand Total</p> 
-											<p>${SubTotal.length != 0
+											SubTotal: $
+											{SubTotal.length != 0 ? Number(val).toFixed(2) : "0"}
+										</td>
+									</tr>
+									<br />
+									<tr>
+										<td>Promo Code: ${Number(-14).toFixed(2)}</td>
+									</tr>
+									<br />
+									<tr>
+										<td>Shipping Fee: ${Number(10).toFixed(2)}</td>
+									</tr>
+									<br />
+									<tr>
+										<td>
+											Grand Total: $
+											{SubTotal.length != 0
 												? Number(val - 14.0 + 10.0).toFixed(2)
-												: "0"}</p>
+												: "0"}
 										</td>
 									</tr>
 								</table>
 							</div>
-							
-						<div className='container secondBtns mt-5 mb-4'>
-							<div className='row'>
-								<button className='col-sm-3 mx-sm-2 mx-0 col-6 btn btn-danger'>
-									<Link className="text-white no-underline" href="/Cart">Back to Cart</Link>
+						</div>
+						<div className='container btns mt-5'>
+							<div className='row flex justify-between'>
+								<button className='col-sm-3 mx-sm-2 mx-0 col-6 btn btn-outline-danger'>
+									<Link className="text-danger no-underline" href="/Checkout">Previous</Link>
 								</button>
 								<button className='col-sm-3 col-5 btn btn-danger'>
-									<Link className="text-white no-underline" href='/CardDetails'>Next</Link>
+									<Link className="text-white no-underline" href=''>Place order</Link>
 									
 								</button>
 							</div>
 						</div>
-					    </div>
 					</div>
-
-					
 				</div>
 			</div>
 		</div>
@@ -223,4 +208,4 @@ const Checkout = () => {
 	);
 };
 
-export default Checkout;
+export default Checkout2;
