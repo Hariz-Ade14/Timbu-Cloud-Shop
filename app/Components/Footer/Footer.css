@@ -43,6 +43,8 @@ input.Email{
     border-radius: 5px;
     color: white;
     width: 30%;
+    height: 40px;
+    padding: 0px 5px;
 }
 @media screen and (max-width: 576px) {
        .footer .row{
