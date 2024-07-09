@@ -66,7 +66,7 @@ const Cart = () => {
 														className='mt-10 times fw-light mx-3'
 														onClick={() => removeItem(item.id)}
 													/>
-													<Image
+													<Image alt="Image"
 														className='prodImg rounded'
 														
 														src={item.image}

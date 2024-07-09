@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import "../CheckOut/checkout.css";
+import "./cd.css"
 import Link from "next/link";
 import {useCart} from "react-use-cart";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Cart/cart.css";
-import Header from "../Components/Header/Header.jsx"
+import {Header} from "../Components/Header/Header.jsx"
 
 const Checkout2 = () => {
 	const {items, removeItem} = useCart();
@@ -110,7 +110,7 @@ const Checkout2 = () => {
 										<tr key={index} className='m-2'>
 											<td className='m-2'>
 												<div className='flex my-3'>
-													<Image
+													<Image alt="Image"
 														className='rounded'
 														style={{width: "100px", height: "100px"}}
 														src={item.image}

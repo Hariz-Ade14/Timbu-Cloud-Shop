@@ -104,7 +104,7 @@ const Footer = () => {
 							/>
 						</form>
 						<li className='nav-link text-white'>
-							Your email is safe with us. We don't spam.
+							Your email is safe with us. We do not spam.
 						</li>
 					</ul>
 				</div>

@@ -19,7 +19,7 @@ const Spice = () => {
 							key={item.id}
 							className='col-md-2 col-sm-3 col-5 colm mx-2 border'
 						>
-							<Image className='img' src={item.image} />
+							<Image alt="image" className='img' src={item.image} />
 							<div className='about mb-0 flex align-middle justify-between'>
 								<div className='h-75'>
 									<p>{item.productName}</p>

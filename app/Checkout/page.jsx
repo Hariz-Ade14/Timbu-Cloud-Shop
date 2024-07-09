@@ -127,7 +127,7 @@ const Checkout = () => {
 										<tr key={index} className='my-3 eachprod'>
 											<td className=''>
 												<div className='flex my-3 p-0'>
-													<Image
+													<Image alt="Image"
 														className='rounded my-0 prodImg'
 														
 														src={item.image}

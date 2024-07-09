@@ -6,7 +6,7 @@ import "./Body.css"
 const Body = () => {
   return (
     <div>
-        <Image src={bgImg} className='image'/>
+        <Image alt='image' src={bgImg} className='image'/>
     </div>
   )
 }

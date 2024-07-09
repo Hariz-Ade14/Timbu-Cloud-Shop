@@ -1,0 +1,70 @@
+.firstbtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: green;
+}
+.secondbtns{
+   display: none;
+}
+.aycc{
+   font-size: 15px;
+}
+.inp::placeholder{
+  color: gray;
+}
+.checkform{
+   border: 1px solid rgb(219, 219, 219);
+   border-radius: 10px;
+   padding: 10px;
+}
+.checkpay{
+   border: 1px solid rgb(219, 219, 219);
+   padding: 10px;
+   border-radius: 10px;
+
+}
+.coup{
+   border: 1px solid rgb(185, 185, 185);
+   border-radius: 5px;
+}
+.tb{
+   padding: 10px;
+   display: flex;
+   margin: auto;
+
+}
+
+.eachprod{
+   height: 30px;
+}
+.checktab tr td {
+   line-height: 5px;
+}
+
+@media screen and (max-width: 576px) {
+   .firstbtns{
+        display: none;
+   }
+   .secondBtns{
+       display: block;
+   }
+   .checkform{
+       border: none;
+       border-radius: 10px;
+       padding: 10px;
+   }
+   .tbl{
+      border: 1px solid rgb(219, 219, 219);
+      margin: 0px 14px;
+      border-radius: 10px;
+      padding-left: 20px;
+
+   }
+   .coupon{
+       margin: 0px 14px;
+   }
+   .coup{
+       border: none;
+   }
+}
