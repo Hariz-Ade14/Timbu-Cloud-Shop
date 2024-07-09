@@ -98,7 +98,7 @@ const Footer = () => {
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
 						<form>
-							<div className="input-group mb-3 mx-0 flex align-middle center">
+							<div className="input-group mb-3 mx-0 flex align-middle justify-center">
 							  <input type="text" className="Email" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 							  <div className="input-group-append">
 							    <button className="btn prepend mt-0 px-2" type="button"><FaArrowRight/></button>
