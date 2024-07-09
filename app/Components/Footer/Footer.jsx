@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
+import {FaArrowRight} from "react-icons/fa"
 const Footer = () => {
 	return (
 		<div className='footer container-fluid sm:p-24 mt-5 py-5'>
@@ -97,11 +98,19 @@ const Footer = () => {
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
 						<form>
-							<input
+							<div class="input-group input-group-sm mb-3">
+								 <div class="input-group-prepend bg">
+								    <button class="input-group-text" id="inputGroup-sizing-sm"><FaArrowRight/></button>
+									 
+								 </div>
+								
+								<input
 								type='text'
 								className='my-3 Email text-white ml-sm-4 w-100'
 								placeholder="Enter your email"
-							/>
+								/>
+							
+							</div>	
 						</form>
 						<li className='nav-link text-white'>
 							Your email is safe with us. We do not spam.
