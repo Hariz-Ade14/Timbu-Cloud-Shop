@@ -9,7 +9,7 @@ input.Email{
     height: 40px;
     padding: 0px 15px;
     color: white;
-    width: 70%;
+   
     margin-left: 18px;
 }
 .Email::placeholder{
@@ -39,7 +39,6 @@ input.Email{
     outline: none;
     border-radius: 5px;
     color: white;
-    width: 30%;
     height: 40px;
     padding: 0px 5px;
 }
