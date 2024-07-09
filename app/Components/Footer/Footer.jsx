@@ -99,17 +99,17 @@ const Footer = () => {
 						</li>
 						<form>
 							<div class="input-group input-group-sm mb-3">
-								 <div class="input-group-prepend bg">
-								    <button class="input-group-text" id="inputGroup-sizing-sm"><FaArrowRight/></button>
-									 
-								 </div>
+								
 								
 								<input
 								type='text'
-								className='my-3 Email text-white ml-sm-4 w-100'
+								className='my-3 Email text-white ml-sm-4'
 								placeholder="Enter your email"
 								/>
-							
+							         <div class="input-group-prepend prepend bg">
+								    <button class="input-group-text" id="inputGroup-sizing-sm"><FaArrowRight/></button>
+									 
+								 </div>
 							</div>	
 						</form>
 						<li className='nav-link text-white'>
