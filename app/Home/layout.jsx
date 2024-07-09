@@ -1,6 +1,6 @@
 "use client"
-import {Header} from "./Components/Header/Header.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
+import {Header} from "../Components/Header/Header.jsx";
+import Footer from "../Components/Footer/Footer.jsx"
 
 
 export default function RootLayout({children}) {
