@@ -101,7 +101,7 @@ const Footer = () => {
 							<div class="input-group mb-3">
 							  <input type="text" className="form-control Email" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 							  <div class="input-group-append">
-							    <button className="btn prepend" type="button">Button</button>
+							    <button className="btn prepend mt-0" type="button"><FaArrowRight/></button>
 							  </div>
 							</div>	
 						</form>
