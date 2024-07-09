@@ -101,7 +101,7 @@ const Footer = () => {
 							<div class="input-group mb-3">
 								  <input type="text" class="form-control mail" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 								  <div class="input-group-append">
-								    <button class="btn btn-outline-secondary text-white" type="button"><FaArrowRight className="text-white"/></button>
+								    <button class="btn text-white" type="button"><FaArrowRight className="text-white"/></button>
 								  </div>
 							</div>
 						</form>
