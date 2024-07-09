@@ -12,7 +12,7 @@ input.Email{
     height: 40px;
     padding: 0px 15px;
     color: white;
-    width: 90%;
+    width: 80%;
     margin-left: 18px;
 }
 .Email::placeholder{
@@ -35,6 +35,15 @@ input.Email{
     /* align-items: center; */
     justify-content: start;
 }
+.prepend{
+    background-color: #a70101;
+    border: 1px solid white;
+    background-color: #a70101;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+}
 @media screen and (max-width: 576px) {
        .footer .row{
           display: flex;
@@ -43,7 +52,7 @@ input.Email{
        }
        .footer{
         background: #A70201;
-       
+        
     }
     .news ul{
         display: flex;
