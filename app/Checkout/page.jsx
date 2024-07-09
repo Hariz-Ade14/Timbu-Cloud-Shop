@@ -207,7 +207,7 @@ const Checkout = () => {
 									<Link className="text-white no-underline" href="/Cart">Back to Cart</Link>
 								</button>
 								<button className='col-sm-3 col-5 btn btn-danger'>
-									<Link className="text-white no-underline" href='/CardDetails'>Next</Link>
+									<Link className="text-white no-underline" href='/Carddetails'>Next</Link>
 									
 								</button>
 							</div>
