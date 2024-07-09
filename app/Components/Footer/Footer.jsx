@@ -100,7 +100,13 @@ const Footer = () => {
 						<form>
 							<div class="input-group input-group-sm mb-3">
 								
-								
+								<div class="input-group mb-3">
+								  <input type="text" className="my-3 Email text-white ml-sm-4 form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+								  <div class="input-group-append">
+								    <button class="btn bg-danger text-white prepend" type="button"><FaArrowRight className="text-white"/></button>
+								  </div>
+								</div>
+{/* 																
 								<input
 								type='text'
 								className='my-3 Email text-white ml-sm-4'
@@ -109,7 +115,7 @@ const Footer = () => {
 							         <div class="input-group-prepend prepend bg">
 								    <button class="input-group-text" id="inputGroup-sizing-sm"><FaArrowRight/></button>
 									 
-								 </div>
+								 </div> */}
 							</div>	
 						</form>
 						<li className='nav-link text-white'>
