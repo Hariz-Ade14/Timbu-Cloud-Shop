@@ -99,7 +99,7 @@ const Footer = () => {
 						</li>
 						<form>
 							<div class="input-group mb-3">
-								  <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+								  <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 								  <div class="input-group-append">
 								    <button class="btn btn-outline-secondary" type="button"><FaArrowRight/></button>
 								  </div>
