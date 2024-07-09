@@ -1,7 +1,7 @@
 p.mb-3{
     font-size: 20px;
 }
-mail{
+.mail{
     background-color: #a70101;
 }
 .mail::focus{
