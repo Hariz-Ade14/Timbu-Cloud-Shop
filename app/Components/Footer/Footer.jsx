@@ -98,10 +98,10 @@ const Footer = () => {
 							Signup for our newsletter to get the latest news in your inbox.
 						</li>
 						<form>
-							<div class="input-group mb-3">
-							  <input type="text" className="form-control Email w-75" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-							  <div class="input-group-append">
-							    <button className="btn prepend mt-0 w-25" type="button"><FaArrowRight/></button>
+							<div class="input-group mb-3 w-100">
+							  <input type="text" className="Email w-75" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+							  <div class="input-group-append w-25">
+							    <button className="btn prepend mt-0" type="button"><FaArrowRight/></button>
 							  </div>
 							</div>	
 						</form>
