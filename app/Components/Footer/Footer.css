@@ -1,21 +1,13 @@
 p.mb-3{
     font-size: 20px;
 }
-input.Email{
-    border: 1px solid white;
-    background-color: #a70101;
-    outline: none;
-    border-radius: 5px;
-    height: 40px;
-    padding: 0px 15px;
-    color: white;
-   
-    margin-left: 18px;
-}
-.Email::focus{
+mail{
     background-color: #a70101;
 }
-.Email::placeholder{
+.mail::focus{
+    background-color: #a70101;
+}
+.mail::placeholder{
     color: white;
     /* font-weight: lighter; */
 }
